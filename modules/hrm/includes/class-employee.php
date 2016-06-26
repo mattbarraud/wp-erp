@@ -4,6 +4,7 @@ namespace WeDevs\ERP\HRM;
 use WeDevs\ERP\HRM\Models\Dependents;
 use WeDevs\ERP\HRM\Models\Education;
 use WeDevs\ERP\HRM\Models\Work_Experience;
+use WeDevs\ERP\HRM\Models\Qualifications;
 
 /**
  * Employee Class
@@ -536,6 +537,15 @@ class Employee {
      */
     public function get_educations() {
         return Education::where( 'employee_id', '=', $this->id )->get();
+    }
+    
+    /**
+     * Get educational qualifications
+     *
+     * @return array the qualifications
+     */
+    public fundction get_qualifications() {
+        return Qualification::where( 'employee_id', '=', $this->id )->get();
     }
 
     /**
