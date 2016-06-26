@@ -582,6 +582,7 @@ function erp_hr_get_employee_statuses_icons( $selected = NULL ) {
  */
 function erp_hr_get_employee_types() {
     $types = array(
+        'volunteer' => __( 'Volunteer', 'erp'),
         'permanent' => __( 'Full Time', 'erp' ),
         'parttime'  => __( 'Part Time', 'erp' ),
         'contract'  => __( 'On Contract', 'erp' ),
