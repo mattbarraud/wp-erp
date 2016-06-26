@@ -540,7 +540,7 @@ class Employee {
     }
     
     /**
-     * Get educational qualifications
+     * Get additional qualifications
      *
      * @return array the qualifications
      */
